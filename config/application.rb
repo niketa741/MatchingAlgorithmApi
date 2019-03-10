@@ -32,8 +32,8 @@ module MatchingAlgorithmApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     config.action_dispatch.default_headers = {
-    'Access-Control-Allow-Origin' => 'https://mighty-beach-73779.herokuapp.com/',
-    'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
-  }
+      'Access-Control-Allow-Origin' => 'https://mighty-beach-73779.herokuapp.com/',
+      'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
+    }
   end
 end
