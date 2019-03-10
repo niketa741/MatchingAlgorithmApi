@@ -31,9 +31,9 @@ module MatchingAlgorithmApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
-  end
-end
-config.action_dispatch.default_headers = {
+    config.action_dispatch.default_headers = {
     'Access-Control-Allow-Origin' => 'https://sweetened.herokuapp.com/',
     'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
   }
+  end
+end
